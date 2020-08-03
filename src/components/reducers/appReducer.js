@@ -1,11 +1,11 @@
 export const initialState = {
-  character: null
+  characters: null
 };
   
 export default function reducer(state, action) {
   switch(action.type) {
-    case 'SET_CHARACTER':
-      return { ...state, character: action.payload };
+    case 'SET_CHARACTERS':
+      return { ...state, characters: action.payload };
     default:
       return state;
   }
