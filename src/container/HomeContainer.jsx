@@ -7,19 +7,13 @@ function HomeContainer() {
   const characters = useCharacters();
   const count = useCount();
 
-  // console.log('homecontainercharacters', characters);
   return (
     <div>
-        This is the main HomeContainer
       <Pagination count={count} />
       <CharacterList characters={characters}/>
     </div>
   );
 }
-
-// HomeContainer.propTypes = {
-
-// };
 
 export default HomeContainer;
 
