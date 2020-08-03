@@ -1,5 +1,5 @@
-export const getAvatarCharactersList = page => {
-  return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters?page=${page}`)
+export const getAvatarCharactersList = count => {
+  return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters?page=${count}`)
     .then(res => res.json())
     .then((characters) => characters.map(character => {
       return {

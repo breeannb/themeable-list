@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const CharacterList = ({ characters }) => {
 
-
   const listElement = characters.map((character, i) => {
     return (
       <li key={i} >

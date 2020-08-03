@@ -9,9 +9,10 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    getAvatarCharactersList()
+    getAvatarCharactersList(state.count)
       .then(character => dispatch({ type: 'SET_CHARACTERS', payload: character }));
-  }, []);
+      
+  }, [state.count]);
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>

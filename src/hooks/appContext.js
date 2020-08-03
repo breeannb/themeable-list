@@ -7,4 +7,12 @@ export const useCharacters = () => {
   return state.characters;
 };
   
+export const useCount = () => {
+  const { state } = useContext(AppContext);
+  return state.count;
+};
 
+export const useDispatch = () => {
+  const { dispatch } = useContext(AppContext);
+  return dispatch;
+};
