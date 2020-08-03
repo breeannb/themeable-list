@@ -1,6 +1,7 @@
 export const initialState = {
   characters: [], 
-  count: 1
+  count: 1,
+  theme: 'dark'
 };
     
 export default function reducer(state, action) {
@@ -11,6 +12,8 @@ export default function reducer(state, action) {
       return { ...state, count: state.count + 1 };
     case 'DECREMENT':
       return { ...state, count: state.count - 1 };
+    case 'TOGGLE_THEME':
+      return { ...state, theme: state.theme === 'light' ? 'dark' : 'light' };
     default:
       return state;
   }

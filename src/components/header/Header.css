@@ -1,0 +1,15 @@
+:root {
+    --light-bg-color: #feec87;
+    --dark-bg-color: #201a54;
+  
+    --light-fg-color: #201a54;
+    --dark-fg-color: #feec87;
+  
+    --light-primary-color: purple;
+    --dark-primary-color: lightgreen
+    ;
+  
+    --light-secondary-color: lightgreen
+    ;
+    --dark-secondary-color: purple;
+  }
