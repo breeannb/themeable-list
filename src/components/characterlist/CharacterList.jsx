@@ -1,17 +1,28 @@
 import React from 'react';
-import { useCharacters } from '../../hooks/appContext';
+import PropTypes from 'prop-types';
 
-const CharacterList = () => {
-  const character = useCharacters();
+const CharacterList = ({ characters }) => {
 
-  console.log(character);
+
+  const listElement = characters.map((character, i) => {
+    return (
+      <li key={i} >
+        <img src={character.photoUrl} />
+        <p>{character.name}</p>
+      </li>
+    );
+  });
+
   return (
-    <div>
-      <img src={character.photoUrl} alt={character.name} />
-      <p>={character.name}</p>
-      <p>This is the Character List Page</p>
-    </div>
+    <ul>
+      {listElement}
+    </ul>
   );
+
+};
+
+CharacterList.propTypes = {
+  characters: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired
 };
 
 export default CharacterList;

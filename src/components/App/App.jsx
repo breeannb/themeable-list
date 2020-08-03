@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from '../header/Header';
-import CharacterList from '../characterlist/CharacterList';
+import HomeContainer from '../../container/HomeContainer';
 
 export default function App() {
+
   return (
     <>
       <Header />
-      <CharacterList />
+      <HomeContainer/>
     </>
   );
 }  

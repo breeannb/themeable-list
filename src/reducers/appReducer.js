@@ -1,5 +1,5 @@
 export const initialState = {
-  characters: null
+  characters: []
 };
     
 export default function reducer(state, action) {
