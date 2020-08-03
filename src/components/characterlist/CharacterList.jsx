@@ -9,6 +9,9 @@ const CharacterList = ({ characters }) => {
       <li key={i} >
         <img src={character.photoUrl} />
         <p>{character.name}</p>
+        <p>{character.allies}</p>
+        <p>{character.enemies}</p>
+        <p>{character.affiliations}</p>
       </li>
     );
   });
