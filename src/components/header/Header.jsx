@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch, useTheme } from '../../hooks/appContext';
 import { useEffect } from 'react';
 import Switch from '@material-ui/core/Switch';
-import styles from './Header.css';
 
 const Header = () => {
   const theme = useTheme();
