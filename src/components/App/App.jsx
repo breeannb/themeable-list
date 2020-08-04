@@ -4,10 +4,11 @@ import HomeContainer from '../../container/HomeContainer';
 
 export default function App() {
 
+
   return (
     <>
       <Header />
-      <HomeContainer/>
+      <HomeContainer />
     </>
   );
 }  
